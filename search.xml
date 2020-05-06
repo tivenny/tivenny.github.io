@@ -10,24 +10,6 @@
       </categories>
   </entry>
   <entry>
-    <title>hexo-admin后台管理</title>
-    <url>/2020/04/05/hexo-admin%E5%90%8E%E5%8F%B0%E7%AE%A1%E7%90%86/</url>
-    <content><![CDATA[<p>hexo一直是不能进行后台管理的，但hexo有一个插件可以进行后台管理，那就是hexo-admin，下面来介绍它的安装和应用：</p>
-<p>一 安装</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm install --save hexo-admin</span><br></pre></td></tr></table></figure>
-
-<p>二 设置用户和用户密码<br>然后进入 <a href="http://localhost:4000/admin,点击setting进行用户名和用户密码设置，看到" target="_blank" rel="noopener">http://localhost:4000/admin,点击setting进行用户名和用户密码设置，看到</a><br>Hexo admin can be secured with a password. setup authentification here.双击setup authentification here填写用户名和密码，出现下面一串代码，全部copy到hexo根目录下的config.yml代码下</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line"> admin</span><br><span class="line">admin:</span><br><span class="line">  username: ******</span><br><span class="line">  password_hash: XwsRbx4gZl8myLbI6&#x2F;oV4T4TxSSxF.</span><br><span class="line">  secret: ******</span><br></pre></td></tr></table></figure>
-
-<p>  最后</p>
-  <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">hexo clean</span><br><span class="line">hexo g</span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure>
-<p>  ok!完事</p>
-]]></content>
-      <categories>
-        <category>技术分享</category>
-      </categories>
-  </entry>
-  <entry>
     <title>hugo建站程序（记牢）</title>
     <url>/2020/04/14/hugo%E5%BB%BA%E7%AB%99%E7%A8%8B%E5%BA%8F%EF%BC%88%E8%AE%B0%E7%89%A2%EF%BC%89/</url>
     <content><![CDATA[<h2 id="安装hugo"><a href="#安装hugo" class="headerlink" title="安装hugo"></a>安装hugo</h2><p>一.下载git和在<a href="www.github.com">github</a>上注册帐户和建仓库，用户名和仓库名要保持一致。</p>
@@ -53,6 +35,24 @@
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">git init</span><br><span class="line">git add . add后面有空格</span><br><span class="line">git commit -m &quot;first commit&quot;</span><br><span class="line">git remote add origin your repository name</span><br><span class="line">git push -u origin master</span><br></pre></td></tr></table></figure>
 <p>最后在浏览器中输入你在github的网址名就ok了，大功告成！！！</p>
 <h2 id="结束"><a href="#结束" class="headerlink" title="结束"></a>结束</h2>]]></content>
+      <categories>
+        <category>技术分享</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>hexo-admin后台管理</title>
+    <url>/2020/04/05/hexo-admin%E5%90%8E%E5%8F%B0%E7%AE%A1%E7%90%86/</url>
+    <content><![CDATA[<p>hexo一直是不能进行后台管理的，但hexo有一个插件可以进行后台管理，那就是hexo-admin，下面来介绍它的安装和应用：</p>
+<p>一 安装</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm install --save hexo-admin</span><br></pre></td></tr></table></figure>
+
+<p>二 设置用户和用户密码<br>然后进入 <a href="http://localhost:4000/admin,点击setting进行用户名和用户密码设置，看到" target="_blank" rel="noopener">http://localhost:4000/admin,点击setting进行用户名和用户密码设置，看到</a><br>Hexo admin can be secured with a password. setup authentification here.双击setup authentification here填写用户名和密码，出现下面一串代码，全部copy到hexo根目录下的config.yml代码下</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line"> admin</span><br><span class="line">admin:</span><br><span class="line">  username: ******</span><br><span class="line">  password_hash: XwsRbx4gZl8myLbI6&#x2F;oV4T4TxSSxF.</span><br><span class="line">  secret: ******</span><br></pre></td></tr></table></figure>
+
+<p>  最后</p>
+  <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">hexo clean</span><br><span class="line">hexo g</span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure>
+<p>  ok!完事</p>
+]]></content>
       <categories>
         <category>技术分享</category>
       </categories>
