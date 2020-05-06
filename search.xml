@@ -10,6 +10,36 @@
       </categories>
   </entry>
   <entry>
+    <title>hugo建站程序（记牢）</title>
+    <url>/2020/04/14/hugo%E5%BB%BA%E7%AB%99%E7%A8%8B%E5%BA%8F%EF%BC%88%E8%AE%B0%E7%89%A2%EF%BC%89/</url>
+    <content><![CDATA[<h2 id="安装hugo"><a href="#安装hugo" class="headerlink" title="安装hugo"></a>安装hugo</h2><p>一.下载git和在<a href="www.github.com">github</a>上注册帐户和建仓库，用户名和仓库名要保持一致。</p>
+<p>二.在D盘新建一个文件夹取名hugo,在hugo文件夹下再新建一个文件夹取名bin,把下载好的hugo解压放在bin的文件夹里（三个文件），下一步配置hugo的系统环境变量，进我的电脑右击属性–高级系统设置–环境变量–系统变量，把bin的路径copy到系统变量中，如图所示：</p>
+<img src="https://raw.githubusercontent.com/tivenny/pic/master/1.png"/>
+
+<img src="https://raw.githubusercontent.com/tivenny/pic/master/2%20png"/>
+
+<img src="https://raw.githubusercontent.com/tivenny/pic/master/3.png"/>
+
+<p>三.在hugo目录下进git,输入：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">hugo new site blog</span><br></pre></td></tr></table></figure>
+<p>那么hugo目录下就有了一个blog的文件夹，blog文件夹下有了一个theme的文件夹，在theme文件夹下进git,从hugo官网下载主题，再把里面的exampleSite文件夹里的文件全部copy到blog的根目录下，那么就可以在本地访问网站了，输入：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">hugo server --theme&#x3D;主题名 --buildDrafts</span><br></pre></td></tr></table></figure>
+<img src="https://raw.githubusercontent.com/tivenny/pic/master/4.png"/>
+
+<img src="https://raw.githubusercontent.com/tivenny/pic/master/5.png"/>
+
+
+<h2 id="部署网站到github上"><a href="#部署网站到github上" class="headerlink" title="部署网站到github上"></a>部署网站到github上</h2><p>四.对主题进行初始化</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">hugo --theme&#x3D;主题名字</span><br></pre></td></tr></table></figure>
+<p>这个时候在blog下面多出一个public的文件夹，进public用git打开，输入下面一串代码：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">git init</span><br><span class="line">git add . add后面有空格</span><br><span class="line">git commit -m &quot;first commit&quot;</span><br><span class="line">git remote add origin your repository name</span><br><span class="line">git push -u origin master</span><br></pre></td></tr></table></figure>
+<p>最后在浏览器中输入你在github的网址名就ok了，大功告成！！！</p>
+<h2 id="结束"><a href="#结束" class="headerlink" title="结束"></a>结束</h2>]]></content>
+      <categories>
+        <category>技术分享</category>
+      </categories>
+  </entry>
+  <entry>
     <title>hexo-admin后台管理</title>
     <url>/2020/04/05/hexo-admin%E5%90%8E%E5%8F%B0%E7%AE%A1%E7%90%86/</url>
     <content><![CDATA[<p>hexo一直是不能进行后台管理的，但hexo有一个插件可以进行后台管理，那就是hexo-admin，下面来介绍它的安装和应用：</p>
@@ -41,36 +71,6 @@
 <p><img src="https://raw.githubusercontent.com/tivenny/pic/master/QQ%E5%9B%BE%E7%89%8720200412182803.png" alt="图2"></p>
 <p><img src="https://raw.githubusercontent.com/tivenny/pic/master/InkedQQ%E6%88%AA%E5%9B%BE20200412182432_LI.jpg" alt="图3"><br>ok! 完事</p>
 ]]></content>
-      <categories>
-        <category>技术分享</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>hugo建站程序（记牢）</title>
-    <url>/2020/04/14/hugo%E5%BB%BA%E7%AB%99%E7%A8%8B%E5%BA%8F%EF%BC%88%E8%AE%B0%E7%89%A2%EF%BC%89/</url>
-    <content><![CDATA[<h2 id="安装hugo"><a href="#安装hugo" class="headerlink" title="安装hugo"></a>安装hugo</h2><p>一.下载git和在<a href="www.github.com">github</a>上注册帐户和建仓库，用户名和仓库名要保持一致。</p>
-<p>二.在D盘新建一个文件夹取名hugo,在hugo文件夹下再新建一个文件夹取名bin,把下载好的hugo解压放在bin的文件夹里（三个文件），下一步配置hugo的系统环境变量，进我的电脑右击属性–高级系统设置–环境变量–系统变量，把bin的路径copy到系统变量中，如图所示：</p>
-<img src="https://raw.githubusercontent.com/tivenny/pic/master/1.png"/>
-
-<img src="https://raw.githubusercontent.com/tivenny/pic/master/2%20png"/>
-
-<img src="https://raw.githubusercontent.com/tivenny/pic/master/3.png"/>
-
-<p>三.在hugo目录下进git,输入：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">hugo new site blog</span><br></pre></td></tr></table></figure>
-<p>那么hugo目录下就有了一个blog的文件夹，blog文件夹下有了一个theme的文件夹，在theme文件夹下进git,从hugo官网下载主题，再把里面的exampleSite文件夹里的文件全部copy到blog的根目录下，那么就可以在本地访问网站了，输入：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">hugo server --theme&#x3D;主题名 --buildDrafts</span><br></pre></td></tr></table></figure>
-<img src="https://raw.githubusercontent.com/tivenny/pic/master/4.png"/>
-
-<img src="https://raw.githubusercontent.com/tivenny/pic/master/5.png"/>
-
-
-<h2 id="部署网站到github上"><a href="#部署网站到github上" class="headerlink" title="部署网站到github上"></a>部署网站到github上</h2><p>四.对主题进行初始化</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">hugo --theme&#x3D;主题名字</span><br></pre></td></tr></table></figure>
-<p>这个时候在blog下面多出一个public的文件夹，进public用git打开，输入下面一串代码：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">git init</span><br><span class="line">git add . add后面有空格</span><br><span class="line">git commit -m &quot;first commit&quot;</span><br><span class="line">git remote add origin your repository name</span><br><span class="line">git push -u origin master</span><br></pre></td></tr></table></figure>
-<p>最后在浏览器中输入你在github的网址名就ok了，大功告成！！！</p>
-<h2 id="结束"><a href="#结束" class="headerlink" title="结束"></a>结束</h2>]]></content>
       <categories>
         <category>技术分享</category>
       </categories>
