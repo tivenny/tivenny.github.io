@@ -1826,7 +1826,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #1277fc;
+  background: #6effff;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3001,10 +3001,4 @@ pre .javascript .function {
 }
 .post-toc ol {
   font-size: 13px;
-}
-body {
-  background: url("https://pixabay.com/zh/photos/coffee-caffeine-cafe-food-drink-5037804/");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: 50% 50%;
 }
