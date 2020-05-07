@@ -1826,7 +1826,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #6c7dff;
+  background: #8b71d2;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3001,10 +3001,4 @@ pre .javascript .function {
 }
 .post-toc ol {
   font-size: 13px;
-}
-body {
-  background: url("https://ae01.alicdn.com/kf/H6665e6efe3e74e9e9ad46dbea41b2ce6n.png");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: 100% 100%;
 }
