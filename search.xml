@@ -1,6 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>windows下hugo怎么样部署到github上</title>
+    <url>/2020/05/25/windows%E4%B8%8Bhugo%E6%80%8E%E4%B9%88%E6%A0%B7%E9%83%A8%E7%BD%B2%E5%88%B0github%E4%B8%8A/</url>
+    <content><![CDATA[<p>一直以来，老是记不住hugo部署到github上的几句命令，没有hexo简单的两句命令来得省事。</p>
+<p>~<br>#进入public文件夹<br>cd public</p>
+<p>#初始化<br>git init</p>
+<p>#添加public中的所有文件<br>git add .</p>
+<p>#提交描述，XXXX中是你这次提交的描述，可以随便写<br>git commit -m “XXXXXXXX”</p>
+<p>#链接到远端，把XXXX替换成自己的内容，不要忘了还有后缀.git<br>git remote add origin <a href="https://github.com/XXXXX/XXXXX.github.io.git" target="_blank" rel="noopener">https://github.com/XXXXX/XXXXX.github.io.git</a></p>
+<p>git pull origin master</p>
+<p>git push -u origin master<br>~</p>
+]]></content>
+      <categories>
+        <category>技术分享</category>
+      </categories>
+  </entry>
+  <entry>
     <title>Microsoft store无法打开的解决方案</title>
     <url>/2020/05/11/Microsoft%20store%E6%97%A0%E6%B3%95%E6%89%93%E5%BC%80%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/</url>
     <content><![CDATA[<p>如果在启动 Microsoft Store 时遇到问题，可以尝试以下方法：</p>
@@ -25,24 +41,6 @@
       <tags>
         <tag>Ubuntu</tag>
       </tags>
-  </entry>
-  <entry>
-    <title>两个邮箱配置两个SSH</title>
-    <url>/2020/04/13/%E4%B8%A4%E4%B8%AA%E9%82%AE%E7%AE%B1%E9%85%8D%E7%BD%AE%E4%B8%A4%E4%B8%AASSH/</url>
-    <content><![CDATA[<p>一般来说,一台电脑上配置两个SSH密钥是很正常的嘛，两个邮箱对应两个SSH.<br>假设原来在C盘中/Users/xxx/.ssh目录下已经生成了一个密钥对：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">id_rsa</span><br><span class="line">id_rsa.pub</span><br></pre></td></tr></table></figure>
-<p>生成第二个key<br>接下来我们生成第二个ssh key：</p>
-<p>ssh-keygen -t rsa -c “<a href="mailto:yourmail@gmail.com">yourmail@gmail.com</a>“<br>这里不要一路回车，我们自己手动填写保存路径：</p>
-<p>Generating public/private rsa key pair.<br>Enter file in which to save the key (/c/Users/xxx/.ssh/id_rsa): /c/Users/xxx/.ssh/id_rsa_github<br>再按回车三次<br>这时我们返回电脑的C盘/Users/xxx/下id_rsa_github来区别原id_rsa。<br><img src="https://raw.githubusercontent.com/tivenny/pic/master/uklwigSl3n.png" alt="图1"></p>
-<p>完成之后，我们可以看到~/.ssh目录下多了两个文件，变成：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">id_rsa</span><br><span class="line"></span><br><span class="line">id_ras.pub</span><br><span class="line"></span><br><span class="line">id_rsa_github</span><br><span class="line"></span><br><span class="line">id_rsa_github.pub</span><br><span class="line"></span><br><span class="line">known_hosts</span><br></pre></td></tr></table></figure>
-<p>然后到[github](<a href="https://github.com/）" target="_blank" rel="noopener">https://github.com/）</a> 上登陆自己的github帐号，点击右上角图像向下箭头，找到setting,进入找到ssh and GPG keys,如下两图所示，把C盘/Users/xxx/里的github_rsa.pub以记事本的方式打开，把里面的代码copy到下图的红框框中。</p>
-<p><img src="https://raw.githubusercontent.com/tivenny/pic/master/QQ%E5%9B%BE%E7%89%8720200412182803.png" alt="图2"></p>
-<p><img src="https://raw.githubusercontent.com/tivenny/pic/master/InkedQQ%E6%88%AA%E5%9B%BE20200412182432_LI.jpg" alt="图3"><br>ok! 完事</p>
-]]></content>
-      <categories>
-        <category>技术分享</category>
-      </categories>
   </entry>
   <entry>
     <title>hugo建站程序（记牢）</title>
@@ -70,6 +68,24 @@
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">git init</span><br><span class="line">git add . add后面有空格</span><br><span class="line">git commit -m &quot;first commit&quot;</span><br><span class="line">git remote add origin your repository name</span><br><span class="line">git push -u origin master</span><br></pre></td></tr></table></figure>
 <p>最后在浏览器中输入你在github的网址名就ok了，大功告成！！！</p>
 <h2 id="结束"><a href="#结束" class="headerlink" title="结束"></a>结束</h2>]]></content>
+      <categories>
+        <category>技术分享</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>两个邮箱配置两个SSH</title>
+    <url>/2020/04/13/%E4%B8%A4%E4%B8%AA%E9%82%AE%E7%AE%B1%E9%85%8D%E7%BD%AE%E4%B8%A4%E4%B8%AASSH/</url>
+    <content><![CDATA[<p>一般来说,一台电脑上配置两个SSH密钥是很正常的嘛，两个邮箱对应两个SSH.<br>假设原来在C盘中/Users/xxx/.ssh目录下已经生成了一个密钥对：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">id_rsa</span><br><span class="line">id_rsa.pub</span><br></pre></td></tr></table></figure>
+<p>生成第二个key<br>接下来我们生成第二个ssh key：</p>
+<p>ssh-keygen -t rsa -c “<a href="mailto:yourmail@gmail.com">yourmail@gmail.com</a>“<br>这里不要一路回车，我们自己手动填写保存路径：</p>
+<p>Generating public/private rsa key pair.<br>Enter file in which to save the key (/c/Users/xxx/.ssh/id_rsa): /c/Users/xxx/.ssh/id_rsa_github<br>再按回车三次<br>这时我们返回电脑的C盘/Users/xxx/下id_rsa_github来区别原id_rsa。<br><img src="https://raw.githubusercontent.com/tivenny/pic/master/uklwigSl3n.png" alt="图1"></p>
+<p>完成之后，我们可以看到~/.ssh目录下多了两个文件，变成：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">id_rsa</span><br><span class="line"></span><br><span class="line">id_ras.pub</span><br><span class="line"></span><br><span class="line">id_rsa_github</span><br><span class="line"></span><br><span class="line">id_rsa_github.pub</span><br><span class="line"></span><br><span class="line">known_hosts</span><br></pre></td></tr></table></figure>
+<p>然后到[github](<a href="https://github.com/）" target="_blank" rel="noopener">https://github.com/）</a> 上登陆自己的github帐号，点击右上角图像向下箭头，找到setting,进入找到ssh and GPG keys,如下两图所示，把C盘/Users/xxx/里的github_rsa.pub以记事本的方式打开，把里面的代码copy到下图的红框框中。</p>
+<p><img src="https://raw.githubusercontent.com/tivenny/pic/master/QQ%E5%9B%BE%E7%89%8720200412182803.png" alt="图2"></p>
+<p><img src="https://raw.githubusercontent.com/tivenny/pic/master/InkedQQ%E6%88%AA%E5%9B%BE20200412182432_LI.jpg" alt="图3"><br>ok! 完事</p>
+]]></content>
       <categories>
         <category>技术分享</category>
       </categories>
