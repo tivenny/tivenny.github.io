@@ -11,20 +11,14 @@
       </categories>
   </entry>
   <entry>
-    <title>Windows子系统下安装Ubuntu</title>
-    <url>/2020/05/11/Windows%E5%AD%90%E7%B3%BB%E7%BB%9F%E4%B8%8B%E5%AE%89%E8%A3%85Ubuntu/</url>
-    <content><![CDATA[<p>Windows 10系统下是可以通过Microsoft store安装Ubuntu的，步骤如下：<br>首先说明一下我的系统是Windows10专业版的，至于家庭版我没试过，好吧，startup</p>
-<h4 id="一-启动Windows功能"><a href="#一-启动Windows功能" class="headerlink" title="一. 启动Windows功能"></a>一. 启动Windows功能</h4><p>右击Windows开始键→搜索→搜索“功能”→启动或关闭Windows功能→在适用于Linux的Windows子系统前面打勾。</p>
-<p><img src="https://ae03.alicdn.com/kf/H9637e804522d470a84da1331c5f9828ej.png" alt="启动Windows功能"></p>
-<h4 id="二-在微软应用商店Microsoft-store中安装Ubuntu"><a href="#二-在微软应用商店Microsoft-store中安装Ubuntu" class="headerlink" title="二. 在微软应用商店Microsoft store中安装Ubuntu"></a>二. 在微软应用商店Microsoft store中安装Ubuntu</h4><p>左击Windows开始键→启动Microsoft store→搜索Ubuntu并下载安装，是不是很简单啊</p>
-<p><img src="https://ae01.alicdn.com/kf/H9ff006adb6844f6394ad6f99d5f5ed078.png" alt="安装Ubuntu"></p>
-<h4 id="结束"><a href="#结束" class="headerlink" title="结束"></a>结束</h4>]]></content>
+    <title>windows下hugo怎么样部署到github上</title>
+    <url>/2020/05/25/windows%E4%B8%8Bhugo%E6%80%8E%E4%B9%88%E6%A0%B7%E9%83%A8%E7%BD%B2%E5%88%B0github%E4%B8%8A/</url>
+    <content><![CDATA[<p>一直以来，老是记不住hugo部署到github上的几句命令，没有hexo简单的两句命令来得省事。</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">#进入public文件夹</span><br><span class="line">cd public</span><br><span class="line"></span><br><span class="line">#初始化</span><br><span class="line">git init</span><br><span class="line"></span><br><span class="line">#添加public中的所有文件</span><br><span class="line">git add .</span><br><span class="line"></span><br><span class="line">#提交描述，XXXX中是你这次提交的描述，可以随便写</span><br><span class="line">git commit -m &quot;XXXXXXXX&quot;</span><br><span class="line"></span><br><span class="line">#链接到远端，把XXXX替换成自己的内容，不要忘了还有后缀.git</span><br><span class="line">git remote add origin https:&#x2F;&#x2F;github.com&#x2F;XXXXX&#x2F;XXXXX.github.io.git</span><br><span class="line"></span><br><span class="line">git pull origin master</span><br><span class="line"></span><br><span class="line">git push -u origin master</span><br></pre></td></tr></table></figure>
+]]></content>
       <categories>
         <category>技术分享</category>
       </categories>
-      <tags>
-        <tag>Ubuntu</tag>
-      </tags>
   </entry>
   <entry>
     <title> 我的建站经历</title>
@@ -48,16 +42,6 @@
 <p>  最后</p>
   <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">hexo clean</span><br><span class="line">hexo g</span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure>
 <p>  ok!完事</p>
-]]></content>
-      <categories>
-        <category>技术分享</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>windows下hugo怎么样部署到github上</title>
-    <url>/2020/05/25/windows%E4%B8%8Bhugo%E6%80%8E%E4%B9%88%E6%A0%B7%E9%83%A8%E7%BD%B2%E5%88%B0github%E4%B8%8A/</url>
-    <content><![CDATA[<p>一直以来，老是记不住hugo部署到github上的几句命令，没有hexo简单的两句命令来得省事。</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">#进入public文件夹</span><br><span class="line">cd public</span><br><span class="line"></span><br><span class="line">#初始化</span><br><span class="line">git init</span><br><span class="line"></span><br><span class="line">#添加public中的所有文件</span><br><span class="line">git add .</span><br><span class="line"></span><br><span class="line">#提交描述，XXXX中是你这次提交的描述，可以随便写</span><br><span class="line">git commit -m &quot;XXXXXXXX&quot;</span><br><span class="line"></span><br><span class="line">#链接到远端，把XXXX替换成自己的内容，不要忘了还有后缀.git</span><br><span class="line">git remote add origin https:&#x2F;&#x2F;github.com&#x2F;XXXXX&#x2F;XXXXX.github.io.git</span><br><span class="line"></span><br><span class="line">git pull origin master</span><br><span class="line"></span><br><span class="line">git push -u origin master</span><br></pre></td></tr></table></figure>
 ]]></content>
       <categories>
         <category>技术分享</category>
@@ -110,5 +94,21 @@
       <categories>
         <category>技术分享</category>
       </categories>
+  </entry>
+  <entry>
+    <title>Windows子系统下安装Ubuntu</title>
+    <url>/2020/05/11/Windows%E5%AD%90%E7%B3%BB%E7%BB%9F%E4%B8%8B%E5%AE%89%E8%A3%85Ubuntu/</url>
+    <content><![CDATA[<p>Windows 10系统下是可以通过Microsoft store安装Ubuntu的，步骤如下：<br>首先说明一下我的系统是Windows10专业版的，至于家庭版我没试过，好吧，startup</p>
+<h4 id="一-启动Windows功能"><a href="#一-启动Windows功能" class="headerlink" title="一. 启动Windows功能"></a>一. 启动Windows功能</h4><p>右击Windows开始键→搜索→搜索“功能”→启动或关闭Windows功能→在适用于Linux的Windows子系统前面打勾。</p>
+<p><img src="https://ae03.alicdn.com/kf/H9637e804522d470a84da1331c5f9828ej.png" alt="启动Windows功能"></p>
+<h4 id="二-在微软应用商店Microsoft-store中安装Ubuntu"><a href="#二-在微软应用商店Microsoft-store中安装Ubuntu" class="headerlink" title="二. 在微软应用商店Microsoft store中安装Ubuntu"></a>二. 在微软应用商店Microsoft store中安装Ubuntu</h4><p>左击Windows开始键→启动Microsoft store→搜索Ubuntu并下载安装，是不是很简单啊</p>
+<p><img src="https://ae01.alicdn.com/kf/H9ff006adb6844f6394ad6f99d5f5ed078.png" alt="安装Ubuntu"></p>
+<h4 id="结束"><a href="#结束" class="headerlink" title="结束"></a>结束</h4>]]></content>
+      <categories>
+        <category>技术分享</category>
+      </categories>
+      <tags>
+        <tag>Ubuntu</tag>
+      </tags>
   </entry>
 </search>
